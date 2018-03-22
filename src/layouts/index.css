@@ -1,0 +1,8 @@
+.gallery-item .item-media {
+  height: 450px;
+  overflow: hidden;
+}
+.gallery-item .item-media img {
+  max-width: 450px;
+  height: auto;
+}
