@@ -28,7 +28,9 @@ export const HomePageQuery = graphql`
   query HomePageQuery {
     contentfulHome {
       aboutText {
-        aboutText
+        childMarkdownRemark {
+          html
+        }
       }
       aboutImage {
         file {

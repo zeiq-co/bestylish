@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { HTMLContent } from './Content';
+
 const HomeAbout = ({ home }) => (
   <section className="ls section_padding_top_110 columns_margin_0 image-overflow">
     <div className="container">
@@ -11,7 +13,8 @@ const HomeAbout = ({ home }) => (
               About us
             </h2>
           </div>
-          <p>{home.aboutText.aboutText}</p>
+
+          <HTMLContent content={home.aboutText.childMarkdownRemark.html} />
         </div>
         <div
           className="col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-6 text-center text-lg-right to_animate"

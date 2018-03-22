@@ -2,6 +2,7 @@ import React from 'react';
 
 import PageHero from '../components/PageHero';
 import HomeBookNow from '../components/HomeBookNow';
+import { HTMLContent } from '../components/Content';
 
 export default class AboutPage extends React.Component {
   render() {
@@ -20,7 +21,9 @@ export default class AboutPage extends React.Component {
                     About us
                   </h2>
                 </div>
-                <p>{about.details.details}</p>
+                <HTMLContent content={about.details.childMarkdownRemark.html} />
+                <br />
+                <br />
               </div>
               <div
                 className="col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-6 text-center text-lg-right to_animate"
@@ -45,7 +48,9 @@ export const AboutPageQuery = graphql`
   query AboutPageQuery {
     contentfulAbout {
       details {
-        details
+        childMarkdownRemark {
+          html
+        }
       }
       image {
         file {
