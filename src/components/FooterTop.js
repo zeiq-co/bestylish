@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FooterTop = () => (
+const FooterTop = ({ home }) => (
   <footer className="page_footer ds ms bg_image section_padding_50">
     <div className="container">
       <div className="row">
@@ -19,21 +19,19 @@ const FooterTop = () => (
         <div className="col-md-4 col-sm-6 to_animate">
           <div className="widget_text">
             <h3 className="widget-title">Contact Us</h3>
-            <p>
-              PO Box 54321 Some str. 765, Los Angeles, California, United States
-            </p>
+            <p>{home.location}</p>
             <div className="border-paragraphs">
               <p>
-                <i className="rt-icon2-device-phone highlight" /> +12 345 678
-                9123
+                <i className="rt-icon2-device-phone highlight" />{' '}
+                {home.telephone}
               </p>
               <p>
                 <i className="rt-icon2-globe-outline highlight" />
-                <a href="./">www.company.com</a>
+                <a href="./">www.gleamish.co.uk</a>
               </p>
               <p>
                 <i className="rt-icon2-mail2 highlight" />
-                <a href="mailto:info@company.com">info@company.com</a>
+                <a href={`mailto:${home.email}`}>{home.email}</a>
               </p>
             </div>
           </div>
@@ -45,7 +43,8 @@ const FooterTop = () => (
             <div className="media">
               <div className="media-left media-middle">
                 <a
-                  href="#"
+                  href={home.facebook}
+                  target="_blank"
                   className="social-icon color-icon bg-icon soc-facebook"
                 />
               </div>
@@ -54,7 +53,18 @@ const FooterTop = () => (
             <div className="media">
               <div className="media-left media-middle">
                 <a
-                  href="#"
+                  href={home.instagram}
+                  target="_blank"
+                  className="social-icon color-icon bg-icon soc-instagram"
+                />
+              </div>
+              <div className="media-body media-middle">Instagram</div>
+            </div>
+            <div className="media">
+              <div className="media-left media-middle">
+                <a
+                  href={home.twitter}
+                  target="_blank"
                   className="social-icon color-icon bg-icon soc-twitter"
                 />
               </div>
@@ -63,7 +73,8 @@ const FooterTop = () => (
             <div className="media">
               <div className="media-left media-middle">
                 <a
-                  href="#"
+                  href={home.pinterest}
+                  target="_blank"
                   className="social-icon color-icon bg-icon soc-pinterest"
                 />
               </div>

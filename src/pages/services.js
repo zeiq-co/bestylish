@@ -6,16 +6,18 @@ import ServicesItem from '../components/ServicesItem';
 
 export default class ServicesPage extends React.Component {
   render() {
+    const { allContentfulService: services } = this.props.data;
+    // console.log('services', services);
+
     return (
       <div>
-        <PageHero />
+        <PageHero title="Services" subTitle="Price list" />
         <section className="ls section_padding_50">
           <div className="container">
             <div className="row">
-              <ServicesItem />
-              <ServicesItem />
-              <ServicesItem />
-              <ServicesItem />
+              {services.edges.map(({ node }) => (
+                <ServicesItem key={node.id} item={node} />
+              ))}
             </div>
           </div>
         </section>
@@ -24,3 +26,18 @@ export default class ServicesPage extends React.Component {
     );
   }
 }
+
+export const ServicesPageQuery = graphql`
+  query ServicesPageQuery {
+    allContentfulService {
+      edges {
+        node {
+          id
+          title
+          price
+          category
+        }
+      }
+    }
+  }
+`;

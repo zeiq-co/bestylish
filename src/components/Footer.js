@@ -5,11 +5,7 @@ const Footer = () => (
     <div className="container">
       <div className="row">
         <div className="col-md-12 col-lg-12 text-center text-md-left">
-          <p className="greylinks">
-            &copy;Model Agency 2016. Created with
-            <i className="flaticon-shapes highlight" /> by
-            <a href="http://modernwebtemplates.com">MWTemplates</a>
-          </p>
+          <p className="greylinks">&copy; 2018 - Gleamish Beauty</p>
         </div>
       </div>
     </div>

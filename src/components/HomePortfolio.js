@@ -1,8 +1,9 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 import PortfolioItem from './PortfolioItem';
 
-const HomePortfolio = () => (
+const HomePortfolio = ({ portfolio }) => (
   <section className="ls ms columns_margin_0 columns_padding_0 page_portfolio">
     <div className="container-fluid">
       <div
@@ -37,12 +38,9 @@ const HomePortfolio = () => (
             </div>
           </div>
         </div>
-        <PortfolioItem />
-        <PortfolioItem />
-        <PortfolioItem />
-        <PortfolioItem />
-        <PortfolioItem />
-        <PortfolioItem />
+        {portfolio.map(({ node }) => (
+          <PortfolioItem key={node.id} item={node} />
+        ))}
         <div className="isotope-item col-sm-6 col-md-4 col-lg-3 fashion studio session">
           <div className="vertical-item portfolio-load-more content-absolute vertical-center text-center">
             <div className="item-media">
@@ -51,9 +49,9 @@ const HomePortfolio = () => (
             <div className="item-content">
               <div className="display_table">
                 <div className="display_table_cell darklinks">
-                  <a href="" className="theme_link fontsize_20">
+                  <Link to="/portfolio" className="theme_link fontsize_20">
                     Load more works
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

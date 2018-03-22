@@ -12,26 +12,43 @@ import Footer from '../components/Footer';
 
 const Container = styled.div``;
 
-const IndexLayout = ({ children }) => (
-  <div>
-    <Helmet
-      title={config.siteName}
-      meta={[{ name: 'description', content: config.description }]}
-    />
-    <div id="canvas">
-      <Container id="box_wrapper">
-        <HeaderTop />
-        <Header />
-        {children()}
-        <FooterTop />
-        <Footer />
-      </Container>
+const IndexLayout = ({ children, data }) => {
+  const { contentfulHome: home } = data;
+  return (
+    <div>
+      <Helmet
+        title={config.siteName}
+        meta={[{ name: 'description', content: config.description }]}
+      />
+      <div id="canvas">
+        <Container id="box_wrapper">
+          <HeaderTop home={home} />
+          <Header />
+          {children()}
+          <FooterTop home={home} />
+          <Footer />
+        </Container>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 IndexLayout.propTypes = {
   children: PropTypes.func.isRequired,
 };
 
 export default IndexLayout;
+
+export const IndexLayoutQuery = graphql`
+  query IndexLayoutQuery {
+    contentfulHome {
+      email
+      telephone
+      facebook
+      location
+      twitter
+      instagram
+      pinterest
+    }
+  }
+`;

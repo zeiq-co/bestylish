@@ -1,25 +1,24 @@
 import React from 'react';
 
-const PortfolioItem = () => (
+const PortfolioItem = ({ item }) => (
   <div className="isotope-item col-sm-6 col-md-4 col-lg-3 fashion">
     <div className="vertical-item gallery-item content-absolute text-center">
       <div className="item-media">
-        <img src="./images/models_square/03.jpg" alt="" />
+        <img src={item.image.file.url} alt={item.title} />
         <div className="media-links">
           <div className="links-wrap">
             <a
               className="p-view prettyPhoto "
-              title=""
+              title={item.title}
               data-gal="prettyPhoto[gal]"
-              href="./images/models_square/03.jpg"
+              href={item.image.file.url}
             />
-            <a className="p-link" title="" href="gallery-single.html" />
           </div>
         </div>
       </div>
       <div className="item-content theme_background">
         <h4 className="item-meta">
-          <a href="model-single.html">Jean Waters</a>
+          <a href="#">{item.title}</a>
         </h4>
       </div>
     </div>
