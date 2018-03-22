@@ -2,32 +2,33 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
+  <header className="page_header header_darkgrey bordered_items">
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-12 text-center">
+          <nav className="mainmenu_wrapper">
+            <ul className="mainmenu nav sf-menu">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/services">Services</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Portfolio</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-  </div>
+  </header>
 );
 
 export default Header;

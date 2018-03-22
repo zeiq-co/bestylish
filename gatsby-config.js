@@ -14,6 +14,13 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `s4wgpqqxs0e0`,
+        accessToken: `7acc47c22b6fbcec9f75379df2be6053b9ad09d0bb4966ca81572c694dd086ad`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: config.googleAnalytics,

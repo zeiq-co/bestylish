@@ -4,15 +4,13 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 import config from '../config/index';
-import Header from '../components/Header';
 import './index.css';
+import HeaderTop from '../components/HeaderTop';
+import Header from '../components/Header';
+import FooterTop from '../components/FooterTop';
+import Footer from '../components/Footer';
 
-const Container = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
-`;
+const Container = styled.div``;
 
 const IndexLayout = ({ children }) => (
   <div>
@@ -20,8 +18,15 @@ const IndexLayout = ({ children }) => (
       title={config.siteName}
       meta={[{ name: 'description', content: config.description }]}
     />
-    <Header />
-    <Container>{children()}</Container>
+    <div id="canvas">
+      <Container id="box_wrapper">
+        <HeaderTop />
+        <Header />
+        {children()}
+        <FooterTop />
+        <Footer />
+      </Container>
+    </div>
   </div>
 );
 

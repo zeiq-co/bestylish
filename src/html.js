@@ -25,10 +25,16 @@ module.exports = class HTML extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="stylesheet" href="/css/bootstrap.min.css" />
+          <link
+            rel="stylesheet"
+            href="/css/main.css"
+            id="color-switcher-link"
           />
+          <link rel="stylesheet" href="/css/animations.css" />
+          <link rel="stylesheet" href="/css/fonts.css" />
+          <script src="/js/vendor/modernizr-2.6.2.min.js" />
           {this.props.headComponents}
           {css}
         </head>
@@ -40,6 +46,8 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <script src="/js/compressed.js" />
+          <script src="/js/main.js" />
         </body>
       </html>
     );
