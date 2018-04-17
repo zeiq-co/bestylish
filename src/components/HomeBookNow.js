@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 const HomeBookNow = () => (
   <section className="cs section_padding_110 page_banner parallax">
@@ -9,11 +10,11 @@ const HomeBookNow = () => (
             Book your appointment today
           </p>
           <p className="fontsize_30 josefin thin grey text-uppercase topmargin_5 bottommargin_50">
-            Consetetur sadipscing elitr, sed dinonumy eirmod
+            Contact for more details and offers available.
           </p>
-          <a href="#" className="theme_button margin_0">
+          <Link to="/contact" className="theme_button margin_0">
             Book now
-          </a>
+          </Link>
         </div>
       </div>
     </div>

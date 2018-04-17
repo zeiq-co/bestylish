@@ -35,7 +35,6 @@ export default class ContactForm extends React.Component {
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        netlify="true"
         onSubmit={this.handleSubmit}
         className="contact-form row columns_margin_0"
       >

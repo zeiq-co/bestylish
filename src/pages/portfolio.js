@@ -37,8 +37,10 @@ export const PortfolioPageQuery = graphql`
           id
           title
           image {
-            file {
-              url
+            title
+            description
+            sizes(maxWidth: 690) {
+              ...GatsbyContentfulSizes
             }
           }
         }

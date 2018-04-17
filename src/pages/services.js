@@ -35,7 +35,10 @@ export const ServicesPageQuery = graphql`
           id
           title
           price
-          category
+          category {
+            id
+            title
+          }
         }
       }
     }

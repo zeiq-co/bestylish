@@ -4,7 +4,7 @@ const FooterTop = ({ home }) => (
   <footer className="page_footer ds ms bg_image section_padding_50">
     <div className="container">
       <div className="row">
-        <div className="col-md-4 col-sm-6 to_animate">
+        <div className="col-md-4 col-sm-6">
           <div className="widget_text">
             <h3 className="widget-title">Why Us?</h3>
             <p>
@@ -16,7 +16,7 @@ const FooterTop = ({ home }) => (
           </div>
         </div>
 
-        <div className="col-md-4 col-sm-6 to_animate">
+        <div className="col-md-4 col-sm-6">
           <div className="widget_text">
             <h3 className="widget-title">Contact Us</h3>
             <p>{home.location}</p>
@@ -27,7 +27,7 @@ const FooterTop = ({ home }) => (
               </p>
               <p>
                 <i className="rt-icon2-globe-outline highlight" />
-                <a href="./">www.gleamish.co.uk</a>
+                <a href="http://www.gleamish.co.uk/">www.gleamish.co.uk</a>
               </p>
               <p>
                 <i className="rt-icon2-mail2 highlight" />
@@ -37,7 +37,7 @@ const FooterTop = ({ home }) => (
           </div>
         </div>
 
-        <div className="col-md-4 col-sm-6 to_animate">
+        <div className="col-md-4 col-sm-6">
           <div className="widget_text">
             <h3 className="widget-title">Stay Connected</h3>
             <div className="media">

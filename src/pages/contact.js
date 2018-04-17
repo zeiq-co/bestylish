@@ -15,10 +15,7 @@ export default class ContactPage extends React.Component {
         <section className="ls section_padding_110">
           <div className="container">
             <div className="row">
-              <div
-                className="col-md-6 col-lg-5 to_animate"
-                data-animation="scaleAppear"
-              >
+              <div className="col-md-6 col-lg-5" data-animation="scaleAppear">
                 <h3 className="widget-title2 entry-title">Contact Us</h3>
 
                 <p>
@@ -78,7 +75,7 @@ export default class ContactPage extends React.Component {
                 </div>
               </div>
               <div
-                className="col-lg-offset-1 col-md-6 to_animate"
+                className="col-lg-offset-1 col-md-6"
                 data-animation="scaleAppear"
               >
                 <ContactForm />

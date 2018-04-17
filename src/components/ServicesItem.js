@@ -5,7 +5,7 @@ const ServicesItem = ({ item }) => (
     <ul className="price-table style2 with_background">
       <li className="plan-name">
         <div>
-          <p>{item.category}</p>
+          {item.category && <p>{item.category.title}</p>}
           <h3>{item.title}</h3>
         </div>
       </li>

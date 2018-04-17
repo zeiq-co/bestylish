@@ -1,8 +1,12 @@
-.gallery-item .item-media {
+.gallery-item .item-media,
+.gallery-item .item-media .gatsby-image-outer-wrapper,
+.gallery-item .item-media .gatsby-image-wrapper {
   height: 450px;
+  width: 450px;
   overflow: hidden;
 }
 .gallery-item .item-media img {
-  max-width: 450px;
-  height: auto;
+  width: 450px !important;
+  height: 450px !important;
+  object-fit: cover !important;
 }

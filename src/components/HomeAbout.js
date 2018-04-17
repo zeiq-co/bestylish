@@ -17,7 +17,7 @@ const HomeAbout = ({ home }) => (
           <HTMLContent content={home.aboutText.childMarkdownRemark.html} />
         </div>
         <div
-          className="col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-6 text-center text-lg-right to_animate"
+          className="col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-6 text-center text-lg-right"
           data-animation="fadeInRight"
         >
           <img

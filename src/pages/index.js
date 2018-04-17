@@ -7,6 +7,10 @@ import HomeBookNow from '../components/HomeBookNow';
 
 export default class HomePage extends React.Component {
   render() {
+    if (!this.props.data) {
+      return null;
+    }
+
     const {
       contentfulHome: home,
       allContentfulPorfolio: portfolio,
@@ -44,8 +48,10 @@ export const HomePageQuery = graphql`
           id
           title
           image {
-            file {
-              url
+            title
+            description
+            sizes(maxWidth: 690) {
+              ...GatsbyContentfulSizes
             }
           }
         }

@@ -14,6 +14,7 @@ const Container = styled.div``;
 
 const IndexLayout = ({ children, data }) => {
   const { contentfulHome: home } = data;
+
   return (
     <div>
       <Helmet
@@ -22,15 +23,19 @@ const IndexLayout = ({ children, data }) => {
       />
       <div id="canvas">
         <Container id="box_wrapper">
-          <HeaderTop home={home} />
+          {home && <HeaderTop home={home} />}
           <Header />
           {children()}
-          <FooterTop home={home} />
+          {home && <FooterTop home={home} />}
           <Footer />
         </Container>
       </div>
     </div>
   );
+};
+
+IndexLayout.defaultProps = {
+  data: {},
 };
 
 IndexLayout.propTypes = {

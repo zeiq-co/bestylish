@@ -1,4 +1,5 @@
 import React from 'react';
+import Img from 'gatsby-image';
 
 import PageHero from '../components/PageHero';
 import HomeBookNow from '../components/HomeBookNow';
@@ -26,12 +27,14 @@ export default class AboutPage extends React.Component {
                 <br />
               </div>
               <div
-                className="col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-6 text-center text-lg-right to_animate"
+                className="col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-6 text-center text-lg-right"
                 data-animation="fadeInRight"
               >
-                <img
-                  src={about.image.file.url}
-                  alt="about us"
+                <Img
+                  sizes={about.image.sizes}
+                  alt={about.image.title}
+                  title={about.image.title}
+                  backgroundColor="#f1f1f1"
                   className="top-overlap-small right-offset"
                 />
               </div>
@@ -53,8 +56,10 @@ export const AboutPageQuery = graphql`
         }
       }
       image {
-        file {
-          url
+        title
+        description
+        sizes(maxWidth: 690) {
+          ...GatsbyContentfulSizes
         }
       }
     }
