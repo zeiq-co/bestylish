@@ -6,7 +6,8 @@
     "browser": true
   },
   "globals": {
-    "graphql": true
+    "graphql": true,
+    "jQuery": true
   },
   "settings": {
     "import/core-modules": ["prop-types", "react", "graphql"]
@@ -24,6 +25,9 @@
     "react/prop-types": 0,
     "react/no-danger": 0,
     "class-methods-use-this": 0,
-    "react/prefer-stateless-function": 0
+    "react/prefer-stateless-function": 0,
+    "react/forbid-prop-types": 0,
+    "jsx-a11y/anchor-has-content": 0,
+    "jsx-a11y/label-has-for": 0
   }
 }

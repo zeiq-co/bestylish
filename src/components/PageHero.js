@@ -2,11 +2,11 @@ import React from 'react';
 
 class PageHero extends React.Component {
   componentDidMount() {
-    var $breadcrumbs = jQuery('.theme_breadcrumbs');
+    const $breadcrumbs = jQuery('.theme_breadcrumbs');
     if ($breadcrumbs.length) {
-      var rand = Math.floor(Math.random() * (7 - 1)) + 1;
-      var bgimagePath = "url('./images/parallax/breadcrumbs" + rand + ".jpg')";
-      $breadcrumbs.attr('style', 'background-image: ' + bgimagePath);
+      const rand = Math.floor(Math.random() * (7 - 1)) + 1;
+      const bgimagePath = `url('./images/parallax/breadcrumbs${  rand  }.jpg')`;
+      $breadcrumbs.attr('style', `background-image: ${  bgimagePath}`);
     }
   }
 

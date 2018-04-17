@@ -40,6 +40,7 @@ IndexLayout.defaultProps = {
 
 IndexLayout.propTypes = {
   children: PropTypes.func.isRequired,
+  data: PropTypes.object,
 };
 
 export default IndexLayout;

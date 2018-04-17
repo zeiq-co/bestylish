@@ -9,7 +9,7 @@ const ServicesItem = ({ item }) => (
           <h3>{item.title}</h3>
         </div>
       </li>
-      {/*<li className="features-list">
+      {/* <li className="features-list">
         <ul>
           <li>Vestibulum eget elit sed</li>
           <li>Duis sit amet laoreet orci</li>
@@ -17,14 +17,14 @@ const ServicesItem = ({ item }) => (
           <li>Mauris consequat, neque</li>
           <li>Aliquam pharetra in eros sit amet</li>
         </ul>
-</li>*/}
+</li> */}
       <li className="plan-price">
         <p>
           <span className="grey">£{item.price}</span>
         </p>
-        {/*<a href="#" className="theme_button small_button margin_0">
+        {/* <a href="#" className="theme_button small_button margin_0">
           Gei it now
-</a>*/}
+</a> */}
       </li>
     </ul>
   </div>
