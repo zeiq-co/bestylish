@@ -18,11 +18,7 @@ export default class ContactPage extends React.Component {
               <div className="col-md-6 col-lg-5" data-animation="scaleAppear">
                 <h3 className="widget-title2 entry-title">Contact Us</h3>
 
-                <p>
-                  Quisque blandit tellus risus, nec suscipit diam gravida vitae.
-                  Donec eget cursus urna. Vivamus ut erat sed leo elementum
-                  eleifend.
-                </p>
+                <p>Contact us now for enquiries !</p>
 
                 <div className="contacts-media-list topmargin_30">
                   <div className="media">

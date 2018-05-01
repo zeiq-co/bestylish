@@ -8,10 +8,9 @@ const FooterTop = ({ home }) => (
           <div className="widget_text">
             <h3 className="widget-title">Why Us?</h3>
             <p>
-              Consetetur sadipscing elitr, sed dinonumy eirmod tempor ut labore
-              edolore magna aliquyam erat, sed diam voluptua. At vero eos et
-              accusam et justo duo dolores et ea rebum stet clita kasd
-              gubergren.
+              Gleamish beauty caters to the beauty needs of women. Joining hands
+              with us will make you feel confident. We make you beautiful and
+              that too on your demand - anywhere,anytime.
             </p>
           </div>
         </div>

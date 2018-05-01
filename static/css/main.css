@@ -1737,10 +1737,10 @@ header [class*="col-"] {
 		margin-top: -170px;
 	}
 
-	.top-overlap-small {
+	/* .top-overlap-small {
 		margin-top: -80px;
 		margin-bottom: -1px;
-	}
+	} */
 
 	.top-overlap-very-small {
 		margin-top: -25px;
@@ -8408,6 +8408,7 @@ aside .widget_tag_cloud a:hover {
 
 .plan-name {
 	padding: 30px 0;
+	min-height: 141px;
 }
 
 .plan-name h3 {
@@ -8501,7 +8502,7 @@ aside .widget_tag_cloud a:hover {
 }
 
 .price-table.style2 .plan-name h3 {
-	font-size: 40px;
+	font-size: 25px;
 	margin-left: -2px;
 }
 
@@ -8883,8 +8884,12 @@ aside .widget_tag_cloud a:hover {
 	top: 3px;
 	max-height: 0;
 	opacity: 0;
-	-webkit-transition: opacity 0.4s ease-in-out 0.4s, max-height 0.4s ease-in 0s, top 0.2s ease-in 0.4s;
-	transition: opacity 0.4s ease-in-out 0.4s, max-height 0.4s ease-in 0s, top 0.2s ease-in 0.4s;
+	-webkit-transition: opacity 0.4s ease-in-out 0.4s,
+ max-height 0.4s ease-in 0s,
+ top 0.2s ease-in 0.4s;
+	transition: opacity 0.4s ease-in-out 0.4s,
+ max-height 0.4s ease-in 0s,
+ top 0.2s ease-in 0.4s;
 }
 
 .item-type2 .content-body {
