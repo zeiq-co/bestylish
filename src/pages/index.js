@@ -6,7 +6,7 @@ import HomePortfolio from '../components/HomePortfolio';
 import HomeBookNow from '../components/HomeBookNow';
 
 export default class HomePage extends React.Component {
-  render() {
+  render () {
     if (!this.props.data) {
       return null;
     }

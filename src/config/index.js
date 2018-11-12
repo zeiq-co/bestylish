@@ -1,6 +1,6 @@
 module.exports = {
-  siteName: 'Gleamish Beauty',
-  author: 'Suman Klair',
+  siteName: 'Be Stylish Salon',
+  author: 'Parminder Klair',
   description: '',
   siteUrl: 'https://www.gleamish.co.uk',
   googleAnalytics: '',
