@@ -6,20 +6,20 @@ import HomePortfolio from '../components/HomePortfolio';
 import HomeBookNow from '../components/HomeBookNow';
 
 export default class HomePage extends React.Component {
-  render () {
+  render() {
     if (!this.props.data) {
       return null;
     }
 
     const {
       contentfulHome: home,
-      allContentfulPorfolio: portfolio,
+      allContentfulPortfolio: portfolio,
     } = this.props.data;
     // console.log('portfolio', portfolio);
 
     return (
       <div>
-        <PageHero title="Gleamish Beauty" subTitle="Suman Klair" />
+        <PageHero title="Be Stylish Salon" subTitle="Rajveer Makeover" />
         <HomeAbout home={home} />
         <HomePortfolio portfolio={portfolio.edges} />
         <HomeBookNow />
@@ -42,7 +42,7 @@ export const HomePageQuery = graphql`
         }
       }
     }
-    allContentfulPorfolio {
+    allContentfulPortfolio {
       edges {
         node {
           id

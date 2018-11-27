@@ -1,14 +1,21 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import styled from 'styled-components';
+
+const Logo = styled(Link)`
+  font-size: 2rem;
+  font-weight: 800;
+`;
 
 const HeaderTop = ({ home }) => (
   <section className="page_toplogo table_section table_section_md ls">
     <div className="container">
       <div className="row">
         <div className="col-sm-8 text-center text-md-left">
-          <Link to="/" className="logo">
-            <img src="/images/logo.png" alt="" />
-          </Link>
+          <Logo to="/" className="logo">
+            {/* <img src="/images/logo.png" alt="" /> */}
+            <span>BE STYLISH SALON</span>
+          </Logo>
           <span className="toggle_menu">
             <span />
           </span>

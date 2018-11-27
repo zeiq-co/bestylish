@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FooterTop = ({home}) => (
+const FooterTop = ({ home }) => (
   <footer className="page_footer ds ms bg_image section_padding_50">
     <div className="container">
       <div className="row">
@@ -8,9 +8,9 @@ const FooterTop = ({home}) => (
           <div className="widget_text">
             <h3 className="widget-title">Why Us?</h3>
             <p>
-              Be Stylish Salon caters to the beauty needs of women. Joining hands
-              with us will make you feel confident. We make you beautiful and
-              that too on your demand - anywhere,anytime.
+              Be Stylish Salon caters to the beauty needs of women. Joining
+              hands with us will make you feel confident. We make you beautiful
+              and that too on your demand - anywhere,anytime.
             </p>
           </div>
         </div>
@@ -26,7 +26,7 @@ const FooterTop = ({home}) => (
               </p>
               <p>
                 <i className="rt-icon2-globe-outline highlight" />
-                <a href="http://www.gleamish.co.uk/">www.gleamish.co.uk</a>
+                <a href="#">bestylishsalon.com</a>
               </p>
               <p>
                 <i className="rt-icon2-mail2 highlight" />

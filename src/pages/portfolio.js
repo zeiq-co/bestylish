@@ -6,7 +6,7 @@ import PortfolioItem from '../components/PortfolioItem';
 
 export default class PortfolioPage extends React.Component {
   render() {
-    const { allContentfulPorfolio: portfolio } = this.props.data;
+    const { allContentfulPortfolio: portfolio } = this.props.data;
 
     return (
       <div>
@@ -31,7 +31,7 @@ export default class PortfolioPage extends React.Component {
 
 export const PortfolioPageQuery = graphql`
   query PortfolioPageQuery {
-    allContentfulPorfolio {
+    allContentfulPortfolio {
       edges {
         node {
           id
