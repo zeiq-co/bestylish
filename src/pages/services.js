@@ -35,10 +35,15 @@ export const ServicesPageQuery = graphql`
           id
           title
           price
-          category {
-            id
-            title
+          bgImage {
+            file  {
+              url
+            }
           }
+          # category {
+          #   id
+          #   title
+          # }
         }
       }
     }

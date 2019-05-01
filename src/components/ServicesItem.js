@@ -2,8 +2,16 @@ import React from 'react';
 
 const ServicesItem = ({ item }) => (
   <div className="col-md-4 col-sm-6">
-    <ul className="price-table style2 with_background">
-      <li className="plan-name">
+    <ul
+      className="price-table style2 with_background"
+      style={{
+        backgroundSize: 'cover',
+        backgroundImage: `url(${
+          item.bgImage === null ? '' : item.bgImage.file.url
+        })`,
+      }}
+    >
+      <li className="plan-name" style={{ backgroundColor: '#f5f5f59e' }}>
         <div>
           {item.category && <p>{item.category.title}</p>}
           <h3>{item.title}</h3>
@@ -18,7 +26,7 @@ const ServicesItem = ({ item }) => (
           <li>Aliquam pharetra in eros sit amet</li>
         </ul>
 </li> */}
-      <li className="plan-price">
+      <li className="plan-price" style={{ backgroundColor: '#f5f5f59e' }}>
         <p>
           <span className="grey">£{item.price}</span>
         </p>
