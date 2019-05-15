@@ -8,9 +8,9 @@ const FooterTop = ({ home }) => (
           <div className="widget_text">
             <h3 className="widget-title">Why Us?</h3>
             <p>
-              Be Stylish Salon caters to the beauty needs of women. Joining
-              hands with us will make you feel confident. We make you beautiful
-              and that too on your demand - anywhere,anytime.
+              Be Stylish Salon caters to the beauty needs of women. Joining hands with us will make
+              you feel confident. We make you beautiful and that too on your demand -
+              anywhere,anytime.
             </p>
           </div>
         </div>
@@ -21,8 +21,7 @@ const FooterTop = ({ home }) => (
             <p>{home.location}</p>
             <div className="border-paragraphs">
               <p>
-                <i className="rt-icon2-device-phone highlight" />{' '}
-                {home.telephone}
+                <i className="rt-icon2-device-phone highlight" /> {home.telephone}
               </p>
               <p>
                 <i className="rt-icon2-globe-outline highlight" />
@@ -72,12 +71,12 @@ const FooterTop = ({ home }) => (
             <div className="media">
               <div className="media-left media-middle">
                 <a
-                  href={home.pinterest}
+                  href={home.youtube}
                   target="_blank"
-                  className="social-icon color-icon bg-icon soc-pinterest"
+                  className="social-icon color-icon bg-icon soc-youtube"
                 />
               </div>
-              <div className="media-body media-middle">Pinterest</div>
+              <div className="media-body media-middle">youtube</div>
             </div>
           </div>
         </div>

@@ -15,9 +15,7 @@ export default class ServicesPage extends React.Component {
         <section className="ls section_padding_50">
           <div className="container">
             <div className="row">
-              {services.edges.map(({ node }) => (
-                <ServicesItem key={node.id} item={node} />
-              ))}
+              {services.edges.map(({ node }) => <ServicesItem key={node.id} item={node} />)}
             </div>
           </div>
         </section>
@@ -36,14 +34,14 @@ export const ServicesPageQuery = graphql`
           title
           price
           bgImage {
-            file  {
+            file {
               url
             }
           }
-          # category {
-          #   id
-          #   title
-          # }
+          category {
+            id
+            title
+          }
         }
       }
     }

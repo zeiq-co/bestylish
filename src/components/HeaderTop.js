@@ -7,14 +7,19 @@ const Logo = styled(Link)`
   font-weight: 800;
 `;
 
+const Image = styled.img`
+  width: 210px;
+  height: 100px;
+`;
+
 const HeaderTop = ({ home }) => (
   <section className="page_toplogo table_section table_section_md ls">
     <div className="container">
       <div className="row">
         <div className="col-sm-8 text-center text-md-left">
           <Logo to="/" className="logo">
-            {/* <img src="/images/logo.png" alt="" /> */}
-            <span>BE STYLISH SALON</span>
+            <Image src="/images/bestylish.jpg" alt="" />
+            {/* <span>BE STYLISH SALON</span> */}
           </Logo>
           <span className="toggle_menu">
             <span />
@@ -24,26 +29,10 @@ const HeaderTop = ({ home }) => (
         <div className="col-sm-4 text-center text-md-right">
           <div className="display_table">
             <div className="display_table_cell">
-              <a
-                href={home.twitter}
-                target="_blank"
-                className="social-icon soc-twitter"
-              />
-              <a
-                href={home.facebook}
-                target="_blank"
-                className="social-icon soc-facebook"
-              />
-              <a
-                href={home.instagram}
-                target="_blank"
-                className="social-icon soc-instagram"
-              />
-              <a
-                href={home.pinterest}
-                target="_blank"
-                className="social-icon soc-pinterest"
-              />
+              <a href={home.twitter} target="_blank" className="social-icon soc-twitter" />
+              <a href={home.facebook} target="_blank" className="social-icon soc-facebook" />
+              <a href={home.instagram} target="_blank" className="social-icon soc-instagram" />
+              <a href={home.pinterest} target="_blank" className="social-icon soc-pinterest" />
             </div>
 
             <div className="display_table_cell">
