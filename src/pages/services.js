@@ -38,10 +38,6 @@ export const ServicesPageQuery = graphql`
               url
             }
           }
-          category {
-            id
-            title
-          }
         }
       }
     }
