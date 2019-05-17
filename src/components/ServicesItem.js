@@ -17,16 +17,17 @@ const ServicesItem = ({ item }) => (
       </li>
       <li className="features-list">
         <ul>
-          <li>Vestibulum eget elit sed</li>
-          <li>Duis sit amet laoreet orci</li>
-          <li>Aliquam non nulla volutpat venenatis</li>
-          <li>Mauris consequat, neque</li>
-          <li>Aliquam pharetra in eros sit amet</li>
+          <li>{item.listIteam[0]}</li>
+          <li>{item.listIteam[1]}</li>
+          <li>{item.listIteam[2]}</li>
+          <li>{item.listIteam[3]}</li>
+          <li>{item.listIteam[4]}</li>
+          <li>{item.listIteam[5]}</li>
         </ul>
       </li>
       <li className="plan-price" style={{ backgroundColor: '#f5f5f59e' }}>
         <p>
-          <span className="grey">£{item.price}</span>
+          <span className="grey">Rs{item.price}</span>
         </p>
         <a href="#" className="theme_button small_button margin_0">
           Gei it now

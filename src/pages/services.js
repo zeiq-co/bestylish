@@ -6,7 +6,7 @@ import ServicesItem from '../components/ServicesItem';
 
 export default class ServicesPage extends React.Component {
   render() {
-    const { allContentfulService: services } = this.props.data;
+    const { allContentfulServiceCategory: ServiceCategory } = this.props.data;
     // console.log('services', services);
 
     return (
@@ -15,7 +15,7 @@ export default class ServicesPage extends React.Component {
         <section className="ls section_padding_50">
           <div className="container">
             <div className="row">
-              {services.edges.map(({ node }) => <ServicesItem key={node.id} item={node} />)}
+              {ServiceCategory.edges.map(({ node }) => <ServicesItem key={node.id} item={node} />)}
             </div>
           </div>
         </section>
@@ -27,17 +27,12 @@ export default class ServicesPage extends React.Component {
 
 export const ServicesPageQuery = graphql`
   query ServicesPageQuery {
-    allContentfulService {
+    allContentfulServiceCategory {
       edges {
         node {
-          id
           title
+          listIteam
           price
-          bgImage {
-            file {
-              url
-            }
-          }
         }
       }
     }
