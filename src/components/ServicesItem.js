@@ -23,6 +23,10 @@ const ServicesItem = ({ item }) => (
           <li>{item.listIteam[3]}</li>
           <li>{item.listIteam[4]}</li>
           <li>{item.listIteam[5]}</li>
+          <li>{item.listIteam[6]}</li>
+          <li>{item.listIteam[7]}</li>
+          <li>{item.listIteam[8]}</li>
+          <li>{item.listIteam[9]}</li>
         </ul>
       </li>
       <li className="plan-price" style={{ backgroundColor: '#f5f5f59e' }}>

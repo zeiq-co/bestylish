@@ -18,9 +18,7 @@ export default class AboutPage extends React.Component {
               <div className="col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-6">
                 <div className="heading bottommargin_40">
                   <p className="text-uppercase josefin grey fontsize_20" />
-                  <h2 className="section_header topmargin_5 bottommargin_0">
-                    About us
-                  </h2>
+                  <h2 className="section_header topmargin_5 bottommargin_0">About us</h2>
                 </div>
                 <HTMLContent content={about.details.childMarkdownRemark.html} />
                 <br />
