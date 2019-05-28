@@ -6,12 +6,9 @@ import PortfolioItem from './PortfolioItem';
 const HomePortfolio = ({ portfolio }) => (
   <section className="ls ms columns_margin_0 columns_padding_0 page_portfolio">
     <div className="container-fluid">
-      <div
-        className="isotope_container isotope row masonry-layout"
-        data-filters=".isotope_filters"
-      >
-        <div className="isotope-item col-xs-6 col-md-4 col-lg-3 text-center fashion studio session">
-          <div className="vertical-item content-absolute vertical-center portfolio-filters">
+      <div className="isotope_container isotope row masonry-layout" data-filters=".isotope_filters">
+        <div className="isotope-item col-xs-6 col-md-4 col-lg-3 text-center    fashion studio session">
+          <div className="vertical-item content-absolute vertical-center                portfolio-filters">
             <div className="item-media">
               <img src="./images/models_square/01.jpg" alt="" />
             </div>
@@ -19,9 +16,7 @@ const HomePortfolio = ({ portfolio }) => (
               <div className="display_table">
                 <div className="display_table_cell text-left">
                   <div className="heading bottommargin_35">
-                    <p className="text-uppercase josefin grey fontsize_20">
-                      Portfolio
-                    </p>
+                    <p className="text-uppercase josefin grey fontsize_20">Portfolio</p>
                     <h2 className="section_header topmargin_5 bottommargin_0">
                       Our beautiful works
                     </h2>

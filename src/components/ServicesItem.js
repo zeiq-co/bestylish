@@ -29,14 +29,6 @@ const ServicesItem = ({ item }) => (
           <li>{item.listIteam[9]}</li>
         </ul>
       </li>
-      <li className="plan-price" style={{ backgroundColor: '#f5f5f59e' }}>
-        <p>
-          <span className="grey">Rs{item.price}</span>
-        </p>
-        <a href="#" className="theme_button small_button margin_0">
-          Gei it now
-        </a>
-      </li>
     </ul>
   </div>
 );
