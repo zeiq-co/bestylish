@@ -63,7 +63,7 @@ export default class ContactPage extends React.Component {
                         <a
                           href={home.pinterest}
                           target="_blank"
-                          className="social-icon soc-pinterest"
+                          className="social-icon soc-youtube"
                         />
                       </div>
                     </div>

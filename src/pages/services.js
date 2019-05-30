@@ -34,6 +34,7 @@ export const ServicesPageQuery = graphql`
         node {
           title
           listIteam
+          price
         }
       }
     }

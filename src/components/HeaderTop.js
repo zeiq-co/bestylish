@@ -32,7 +32,7 @@ const HeaderTop = ({ home }) => (
               <a href={home.twitter} target="_blank" className="social-icon soc-twitter" />
               <a href={home.facebook} target="_blank" className="social-icon soc-facebook" />
               <a href={home.instagram} target="_blank" className="social-icon soc-instagram" />
-              <a href={home.pinterest} target="_blank" className="social-icon soc-pinterest" />
+              <a href={home.youtube} target="_blank" className="social-icon soc-youtube" />
             </div>
 
             <div className="display_table_cell">
