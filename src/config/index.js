@@ -1,6 +1,6 @@
 module.exports = {
-  siteName: 'Be Stylish Salon',
-  author: 'Parminder Klair',
+  siteName: 'BeStylish Salon',
+  author: 'Zeiq',
   description: '',
   siteUrl: 'https://www.bestylishsalon.com',
   googleAnalytics: '',
