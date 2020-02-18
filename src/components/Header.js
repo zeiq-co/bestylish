@@ -23,6 +23,9 @@ const Header = () => (
               <li>
                 <Link to="/contact">Contact</Link>
               </li>
+              <li>
+                <Link to="/Blog">Blog</Link>
+              </li>
             </ul>
           </nav>
         </div>

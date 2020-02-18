@@ -1,5 +1,4 @@
 import React from 'react';
-
 import PageHero from '../components/PageHero';
 import HomeBookNow from '../components/HomeBookNow';
 import ServicesItem from '../components/ServicesItem';
